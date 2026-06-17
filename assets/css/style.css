@@ -120,7 +120,7 @@ h4,
 .button--donate svg {
   width: 1rem;
   height: 1rem;
-  fill: currentColor;
+  fill: var(--color-yellow);
 }
 
 .split {
@@ -321,13 +321,17 @@ h4,
   color: var(--color-donate);
 }
 
+#donate-fallback {
+  padding-bottom: 3rem;
+}
+
 .donate-box {
   max-width: 900px;
   margin: 0 auto;
-  padding: 2rem 1.75rem;
-  border: 2px solid var(--color-border);
-  border-radius: 4px;
-  background: #f7fbff;
+  padding: 2.25rem 2.5rem;
+  border: 2px solid var(--color-donate);
+  border-radius: 0;
+  background: var(--color-white);
 }
 
 .donate-box__grid {
@@ -347,6 +351,25 @@ h4,
   margin: 0;
   max-width: 32rem;
   font-size: 15px;
+}
+
+.site-footer {
+  background: var(--color-dark);
+  color: var(--color-white);
+  padding: 1.25rem 1.5rem;
+}
+
+.site-footer__inner {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+
+.site-footer__inner img {
+  height: 2.25rem;
+  width: auto;
 }
 
 .fru-anchor {
