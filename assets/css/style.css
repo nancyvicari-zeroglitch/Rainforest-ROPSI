@@ -261,8 +261,22 @@ h4,
   color: rgba(255, 255, 255, 0.92);
 }
 
-.leaderboard-slot {
-  min-height: 320px;
+#leading-by-example.section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#leading-by-example .split {
+  grid-template-columns: 1.35fr 0.85fr;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+#leading-by-example .leaderboard-slot {
+  max-width: 300px;
+  width: 100%;
+  margin-inline: auto;
+  min-height: 0;
 }
 
 .rally-section {
@@ -283,8 +297,13 @@ h4,
 
 .map-slot {
   width: min(860px, 100%);
-  min-height: 280px;
+  min-height: 360px;
   margin: 0 auto 1.5rem;
+}
+
+.map-slot iframe {
+  width: 100% !important;
+  min-height: 360px;
 }
 
 .panoramic-break img {
