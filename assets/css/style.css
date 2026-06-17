@@ -13,6 +13,7 @@
   --container-max: 1024px;
   --hero-content-max: 560px;
   --section-padding: 4rem 1.5rem;
+  --fru-test-bar-height: 2.75rem; /* ~44px — clears FRU test banner */
 }
 
 *,
@@ -294,6 +295,7 @@ h4,
 
 .faq-section {
   text-align: center;
+  padding-bottom: 2rem;
 }
 
 .faq-grid {
@@ -322,6 +324,7 @@ h4,
 }
 
 #donate-fallback {
+  padding-top: 1.5rem;
   padding-bottom: 3rem;
 }
 
@@ -356,7 +359,7 @@ h4,
 .site-footer {
   background: var(--color-dark);
   color: var(--color-white);
-  padding: 1.25rem 1.5rem;
+  padding: 1.25rem 1.5rem calc(1.25rem + var(--fru-test-bar-height));
 }
 
 .site-footer__inner {
